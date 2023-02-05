@@ -1,5 +1,4 @@
 $path = Read-Host "Bitte Pfad angeben"
-#$path = "C:\Users\Michael Somnitz\TuneFab\Amazon Music Converter\Converted\test"
 $files = Get-ChildItem $path
 
 [Reflection.Assembly]::LoadFrom( (Resolve-Path ("C:\code\mp3-renamer\lib\TagLibSharp.dll")))
